@@ -128,6 +128,10 @@ h1, h2, h3, h4 {
   cursor: pointer;
 }
 
+.footer {
+  background-color: gray;
+}
+
 @media (max-width: 1180px) {
   .form {
     padding-bottom: 141px;
