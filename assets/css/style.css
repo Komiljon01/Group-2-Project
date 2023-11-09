@@ -154,6 +154,11 @@ h1, h2, h3, h4 {
     grid-auto-columns: calc(50% - 9px);
   }
 }
+@media (max-width: 770px) {
+  .carousel .card {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
@@ -174,9 +179,6 @@ h1, h2, h3, h4 {
 .client-img {
   background-color: #c4c4c4;
   border-radius: 10px;
-  -webkit-box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
-  -moz-box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
-  box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
 }
 
 .client-info h2 {
@@ -230,6 +232,15 @@ h1, h2, h3, h4 {
   font-size: 20px;
 }
 
+@media (max-width: 800px) {
+  .client-img {
+    height: 413px;
+    width: 100%;
+  }
+  .clients-slider {
+    grid-template-columns: 1fr;
+  }
+}
 .heading h2 {
   color: #121212;
   font-family: Playfair Display;

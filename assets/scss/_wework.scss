@@ -48,25 +48,21 @@
   }
 }
 
-
 .we-work-part {
   margin-top: 111px;
 }
 
-
-.work-cards{
+.work-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 73px;
 }
 
-
 .wrapper {
   margin-top: 39px;
 }
 
-
-.wrapper .carousel{
+.wrapper .carousel {
   display: flex;
   display: grid;
   grid-auto-flow: column;
@@ -79,7 +75,6 @@
 }
 
 .carousel .card {
-  
   width: 316px;
   scroll-snap-align: start;
   // height: 342px;
@@ -111,14 +106,19 @@
 //   align-items: center;
 // }
 
-
-.work-card{
+.work-card {
   width: 100%;
 }
 
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media (max-width: 770px) {
+  .carousel .card {
+    width: 100%;
   }
 }
 
