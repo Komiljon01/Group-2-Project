@@ -1,0 +1,30 @@
+.heading {
+    h2 {
+      color: #121212;
+      font-family: Playfair Display;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+    .more {
+      margin-top: 9px;
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      span {
+        color: rgba(18, 18, 18, 0.6);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 175%; /* 35px */
+      }
+      .line {
+        width: 67px;
+        height: 2px;
+        background-color: #ff6a28;
+      }
+    }
+  }
+  
