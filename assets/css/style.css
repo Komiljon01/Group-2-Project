@@ -129,7 +129,118 @@ h1, h2, h3, h4 {
 }
 
 .footer {
-  background-color: gray;
+  padding-top: 306px;
+  padding-bottom: 84px;
+}
+.footer .wrapper .footer__content {
+  display: flex;
+  column-gap: 116px;
+  margin-bottom: 138px;
+}
+
+.footer__subscribe {
+  width: 494px;
+}
+.footer__subscribe .footer__subscribe-title {
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
+}
+.footer__subscribe .footer__subscribe-title h3 {
+  color: #121212;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45.84px;
+}
+.footer__subscribe .footer__subscribe-title span {
+  display: inline-block;
+  width: 130px;
+  height: 2px;
+  background-color: #FF6A28;
+  border-radius: 2px;
+}
+.footer__subscribe .footer__subscribe-text {
+  color: rgba(18, 18, 18, 0.5);
+  font-size: 20px;
+  line-height: 38.2px;
+  margin-top: 18px;
+  margin-bottom: 38px;
+}
+.footer__subscribe .footer__subscribe-form {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 15px;
+  background-color: #F8FAFB;
+  border-radius: 8px;
+  padding: 20px 17px 20px 29px;
+}
+.footer__subscribe .footer__subscribe-form input {
+  width: 100%;
+  background-color: transparent;
+  color: rgba(18, 18, 18, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38.2px;
+  border: none;
+  outline: none;
+}
+.footer__subscribe .footer__subscribe-form input:focus, .footer__subscribe .footer__subscribe-form input:visited {
+  background-color: transparent;
+}
+.footer__subscribe .footer__subscribe-form .footer__submit-btn {
+  cursor: pointer;
+}
+
+.footer__sections {
+  display: flex;
+  column-gap: 116px;
+}
+.footer__sections ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.footer__sections ul li a {
+  color: rgba(18, 18, 18, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38.2px;
+  transition: color 0.2s ease;
+}
+.footer__sections ul li a:hover {
+  color: #121212;
+}
+.footer__sections ul li:first-child {
+  color: #121212;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 45.84px;
+}
+
+.footer__end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__end .created__by, .footer__end .footer__privacy a {
+  color: rgba(18, 18, 18, 0.5);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 38.2px;
+}
+.footer__end .footer__privacy {
+  display: flex;
+  column-gap: 33px;
+}
+.footer__end .footer__privacy a {
+  transition: color 0.2s ease;
+}
+.footer__end .footer__privacy a:hover {
+  color: #121212;
 }
 
 @media (max-width: 1180px) {
@@ -152,6 +263,38 @@ h1, h2, h3, h4 {
   }
   .form .wrapper .form__content .form__title {
     max-width: 100%;
+  }
+  .footer {
+    padding-top: 150px;
+  }
+  .footer__sections {
+    width: 50%;
+    max-width: 100%;
+    column-gap: 15px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 992px) {
+  .footer .wrapper .footer__content {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .footer__subscribe {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__subscribe .footer__subscribe-title {
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .footer__sections {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer__end {
+    flex-direction: column;
+    row-gap: 15px;
   }
 }
 @media (max-width: 900px) {
@@ -176,6 +319,28 @@ h1, h2, h3, h4 {
   .form .wrapper .form__card {
     max-width: 700px;
   }
+  .footer__subscribe .footer__subscribe-text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__subscribe .footer__subscribe-form input, .footer__subscribe .footer__subscribe-form button {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__sections ul li:first-child {
+    font-size: 22px;
+  }
+  .footer__sections ul li a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .footer__end {
+    row-gap: 10px;
+  }
+  .footer__end .created__by, .footer__end .footer__privacy a {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 @media (max-width: 768px) {
   .form .wrapper .form__content .form__title {
@@ -197,6 +362,12 @@ h1, h2, h3, h4 {
   }
   .form .wrapper .form__card .submit__btn .btn {
     font-size: 18px;
+  }
+  .footer {
+    padding: 70px 0;
+  }
+  .footer__sections {
+    width: 90%;
   }
 }
 @media (max-width: 576px) {
@@ -225,6 +396,30 @@ h1, h2, h3, h4 {
   }
   .form .wrapper .form__card .submit__btn .btn {
     font-size: 16px;
+  }
+  .footer .wrapper .footer__content {
+    margin-bottom: 75px;
+  }
+  .footer__subscribe .footer__subscribe-title {
+    row-gap: 5px;
+  }
+  .footer__subscribe .footer__subscribe-form input, .footer__subscribe .footer__subscribe-form button {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .footer__sections ul {
+    row-gap: 12px;
+  }
+  .footer__sections ul li:first-child {
+    font-size: 20px;
+  }
+  .footer__sections ul li a {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .footer__end .created__by, .footer__end .footer__privacy a {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 @media (max-width: 460px) {
@@ -256,6 +451,64 @@ h1, h2, h3, h4 {
   }
   .form .wrapper .form__card .submit__btn .btn {
     font-size: 14px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .footer .wrapper .footer__content {
+    row-gap: 25px;
+    margin-bottom: 40px;
+  }
+  .footer__subscribe .footer__subscribe-text {
+    font-size: 14px;
+  }
+  .footer__subscribe .footer__subscribe-form {
+    padding: 15px 10px;
+  }
+  .footer__subscribe .footer__subscribe-form input, .footer__subscribe .footer__subscribe-form button {
+    font-size: 14px;
+  }
+  .footer__sections {
+    flex-direction: column;
+    row-gap: 25px;
+  }
+  .footer__sections ul {
+    row-gap: 8px;
+  }
+  .footer__sections ul li:first-child {
+    line-height: 30px;
+    font-size: 18px;
+  }
+  .footer__sections ul li a {
+    font-size: 14px;
+  }
+  .footer__end .created__by, .footer__end .footer__privacy a {
+    font-size: 14px;
+    text-align: center;
+  }
+  .footer__end .footer__privacy {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .footer__subscribe .footer__subscribe-title h3 {
+    font-size: 22px;
+  }
+  .footer__subscribe .footer__subscribe-form {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .footer__subscribe .footer__subscribe-form input {
+    border: 1px solid #CCC;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .footer__subscribe .footer__subscribe-form button {
+    width: 100%;
+  }
+  .footer__sections {
+    text-align: center;
   }
 }
 @media (max-width: 300px) {
