@@ -1,0 +1,64 @@
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media (max-width: 800px) {
+  .client-img {
+    height: 413px;
+    width: 100%;
+  }
+  .clients-slider {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 770px) {
+  .carousel .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .mini-card-heading{
+        h3{
+            font-size: 30px;
+        }
+    }
+
+    .work-card__text{
+        p{
+            font-size: 15px;
+        }
+    }
+    .client-info{
+        h4{
+            font-size: 14px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+    .heading{
+        h2{
+            font-size: 40px;
+        }
+
+        span{
+            font-size: 10px;
+        }
+    }
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+@media (max-width:350px) {
+    .heading{
+        h2{
+            font-size: 30px;
+        }
+    }
+}
