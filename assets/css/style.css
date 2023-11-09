@@ -49,34 +49,6 @@ h1, h2, h3, h4 {
   color: #FF6A28;
 }
 
-.heading h2 {
-  color: #121212;
-  font-family: Playfair Display;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-.heading .more {
-  margin-top: 9px;
-  display: flex;
-  align-items: center;
-  gap: 17px;
-}
-.heading .more span {
-  color: rgba(18, 18, 18, 0.6);
-  font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 175%; /* 35px */
-}
-.heading .more .line {
-  width: 67px;
-  height: 2px;
-  background-color: #ff6a28;
-}
-
 .we-work-part {
   padding-bottom: 99px;
 }
@@ -123,6 +95,70 @@ h1, h2, h3, h4 {
   line-height: 162.5%; /* 32.5px */
 }
 
+.we-work-part {
+  margin-top: 111px;
+}
+
+.work-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 73px;
+}
+
+.wrapper {
+  margin-top: 39px;
+}
+
+.wrapper .carousel {
+  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(33.3333333333% - 12px);
+  overflow-x: auto;
+  gap: 44px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel .card {
+  width: 316px;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.work-card {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc(50% - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
 .our-clients {
   background: #f8fafb;
   padding: 56px 0 77px;
@@ -136,9 +172,11 @@ h1, h2, h3, h4 {
 }
 
 .client-img {
-  height: 416px;
   background-color: #c4c4c4;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
+  -moz-box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
+  box-shadow: 2px 32px 100px -100px rgb(66, 68, 90);
 }
 
 .client-info h2 {
@@ -166,6 +204,58 @@ h1, h2, h3, h4 {
   font-style: normal;
   font-weight: 500;
   line-height: 191%; /* 45.84px */
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  gap: 21px;
+}
+.controls button {
+  cursor: pointer;
+  width: 60px;
+  height: 55px;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+}
+.controls button:hover {
+  background-color: #ff6a28;
+}
+.controls button:hover i {
+  color: white;
+}
+.controls i {
+  color: #ff6a28;
+  font-size: 20px;
+}
+
+.heading h2 {
+  color: #121212;
+  font-family: Playfair Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.heading .more {
+  margin-top: 9px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.heading .more span {
+  color: rgba(18, 18, 18, 0.6);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 175%; /* 35px */
+}
+.heading .more .line {
+  width: 67px;
+  height: 2px;
+  background-color: #ff6a28;
 }
 
 /*# sourceMappingURL=style.css.map */

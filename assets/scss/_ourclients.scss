@@ -1,48 +1,76 @@
 .our-clients {
-    background: #f8fafb;
-    padding: 56px 0 77px;
+  background: #f8fafb;
+  padding: 56px 0 77px;
+}
+
+.clients-slider {
+  margin-top: 39px;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.client-img {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 32px 100px -100px rgba(66, 68, 90, 1);
+      -moz-box-shadow: 2px 32px 100px -100px rgba(66, 68, 90, 1);
+      box-shadow: 2px 32px 100px -100px rgba(66, 68, 90, 1);
+}
+
+.client-info {
+  h2 {
+    color: #121212;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  
-  .clients-slider {
-    margin-top: 39px;
-    display: grid;
-    gap: 50px;
-    grid-template-columns: 1fr 1fr;
+
+  h4 {
+    margin: 3px 0 34px;
+    color: rgba(18, 18, 18, 0.6);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 175%; /* 35px */
   }
-  
-  .client-img {
-    height: 416px;
-    background-color: #c4c4c4;
-    border-radius: 10px;
+  p {
+    color: rgba(18, 18, 18, 0.83);
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 191%; /* 45.84px */
   }
-  
-  .client-info {
-    h2 {
-      color: #121212;
-      font-family: Poppins;
-      font-size: 50px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  gap: 21px;
+  button {
+    cursor: pointer;
+    width: 60px;
+    height: 55px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #ff6a28;
+
+      i {
+        color: white;
+      }
     }
-  
-    h4 {
-      margin: 3px 0 34px;
-      color: rgba(18, 18, 18, 0.6);
-      font-family: Poppins;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 175%; /* 35px */
-    }
-    p {
-      color: rgba(18, 18, 18, 0.83);
-      text-align: justify;
-      font-family: Poppins;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 191%; /* 45.84px */
-    }
   }
-  
+
+  i {
+    color: #ff6a28;
+    font-size: 20px;
+  }
+}
