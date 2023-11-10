@@ -49,6 +49,82 @@ h1, h2, h3, h4 {
   color: #FF6A28;
 }
 
+.latestProject {
+  padding-top: 84px;
+  padding-bottom: 142px;
+}
+.latestProject .latestProject__intro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 9px;
+  text-align: center;
+  margin-bottom: 79px;
+}
+.latestProject .latestProject__intro .latestProject__title {
+  color: #121212;
+  font-size: 60px;
+}
+.latestProject .latestProject__intro .latestProject__gallery-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.latestProject .latestProject__intro .latestProject__gallery-text p {
+  color: rgba(18, 18, 18, 0.6);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.latestProject .latestProject__intro .latestProject__gallery-text .latestProject__line {
+  width: 67px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #FF6A28;
+}
+
+.latestProject__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 131px;
+}
+.latestProject__cards .latestProject__card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: start;
+  column-gap: 61px;
+}
+
+.latestProject__card-content {
+  max-width: 531px;
+}
+.latestProject__card-content .latestProject__card-title {
+  color: #121212;
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+.latestProject__card-content .latestProject__card-text {
+  color: rgba(18, 18, 18, 0.83);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45.84px;
+  margin: 40px 0;
+}
+
+.latestProject__card-img {
+  width: 100%;
+  max-width: 577px;
+  height: 477px;
+  background-color: #C4C4C4;
+  border-radius: 10.23px;
+  -webkit-box-shadow: 0px 66px 63px -11px rgba(18, 18, 18, 0.15);
+  -moz-box-shadow: 0px 66px 63px -11px rgba(18, 18, 18, 0.15);
+  box-shadow: 0px 66px 63px -11px rgba(18, 18, 18, 0.15);
+}
+
 .form {
   background-color: #F8FAFB;
 }
@@ -275,6 +351,24 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 992px) {
+  .latestProject__cards {
+    row-gap: 100px;
+  }
+  .latestProject__cards .latestProject__card:nth-child(even) {
+    flex-direction: column;
+  }
+  .latestProject__card {
+    flex-direction: column-reverse;
+    text-align: center;
+    row-gap: 50px;
+  }
+  .latestProject__card-content {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+  .latestProject__card-img {
+    margin: 0 auto;
+  }
   .footer .wrapper .footer__content {
     flex-direction: column;
     row-gap: 50px;
@@ -298,6 +392,16 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 900px) {
+  .latestProject .latestProject__intro .latestProject__title {
+    font-size: 50px;
+  }
+  .latestProject__card-content .latestProject__card-title {
+    font-size: 40px;
+  }
+  .latestProject__card-content .latestProject__card-text {
+    font-size: 22px;
+    margin: 30px 0;
+  }
   .form {
     padding: 100px 0;
   }
@@ -343,6 +447,28 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 768px) {
+  .latestProject .latestProject__intro {
+    margin-bottom: 50px;
+  }
+  .latestProject .latestProject__intro .latestProject__title {
+    font-size: 40px;
+  }
+  .latestProject__cards {
+    row-gap: 80px;
+  }
+  .latestProject__card-content {
+    max-width: 100%;
+  }
+  .latestProject__card-content .latestProject__card-title {
+    font-size: 30px;
+  }
+  .latestProject__card-content .latestProject__card-text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .latestProject__card-content .latestProject__readMore-btn {
+    font-size: 18px;
+  }
   .form .wrapper .form__content .form__title {
     font-size: 40px;
   }
@@ -371,6 +497,25 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 576px) {
+  .latestProject .latestProject__intro .latestProject__title {
+    font-size: 30px;
+  }
+  .latestProject .latestProject__intro .latestProject__gallery-text p {
+    font-size: 18px;
+  }
+  .latestProject__cards {
+    row-gap: 60px;
+  }
+  .latestProject__card-content .latestProject__card-title {
+    font-size: 25px;
+  }
+  .latestProject__card-content .latestProject__card-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .latestProject__card-content .latestProject__readMore-btn {
+    font-size: 16px;
+  }
   .form .wrapper {
     row-gap: 50px;
   }
@@ -423,6 +568,31 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 460px) {
+  .latestProject {
+    padding: 60px 0;
+  }
+  .latestProject__cards {
+    row-gap: 40px;
+  }
+  .latestProject .latestProject__intro {
+    margin-bottom: 30px;
+  }
+  .latestProject .latestProject__intro .latestProject__gallery-text p {
+    font-size: 16px;
+  }
+  .latestProject__card-content .latestProject__card-title {
+    font-size: 25px;
+  }
+  .latestProject__card-content .latestProject__card-text {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .latestProject__card-content .latestProject__readMore-btn {
+    font-size: 14px;
+  }
+  .latestProject__card-img {
+    height: 300px;
+  }
   .form {
     padding: 60px 0;
   }
@@ -492,6 +662,22 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 360px) {
+  .latestProject .latestProject__intro .latestProject__title {
+    font-size: 25px;
+  }
+  .latestProject .latestProject__intro .latestProject__gallery-text {
+    flex-direction: column;
+    row-gap: 5px;
+  }
+  .latestProject .latestProject__intro .latestProject__gallery-text p {
+    font-size: 14px;
+  }
+  .latestProject__card {
+    row-gap: 30px;
+  }
+  .latestProject__card-img {
+    height: 200px;
+  }
   .footer__subscribe .footer__subscribe-title h3 {
     font-size: 22px;
   }
@@ -512,6 +698,25 @@ h1, h2, h3, h4 {
   }
 }
 @media (max-width: 300px) {
+  .latestProject {
+    padding: 40px 0;
+  }
+  .latestProject .latestProject__intro .latestProject__title {
+    font-size: 22px;
+  }
+  .latestProject .latestProject__intro .latestProject__gallery-text p {
+    font-size: 12px;
+  }
+  .latestProject__card-content .latestProject__card-title {
+    font-size: 22px;
+  }
+  .latestProject__card-content .latestProject__card-text {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .latestProject__card-content .latestProject__readMore-btn {
+    font-size: 12px;
+  }
   .form {
     padding: 40px 0;
   }

@@ -39,6 +39,30 @@
 }
 
 @media (max-width: 992px) {
+    // Latest Project
+    .latestProject__cards {
+      row-gap: 100px;
+      .latestProject__card:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
+    .latestProject__card {
+      flex-direction: column-reverse;
+      text-align: center;
+      row-gap: 50px;
+    }
+
+    .latestProject__card-content {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .latestProject__card-img {
+      margin: 0 auto;
+    }
+
+
     // Footer media
     .footer .wrapper .footer__content {
         flex-direction: column;
@@ -68,6 +92,23 @@
 }
 
 @media (max-width: 900px) {
+    // Latest Project
+    .latestProject .latestProject__intro .latestProject__title {
+      font-size: 50px;
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 40px;
+      }
+
+      .latestProject__card-text {
+        font-size: 22px;
+        margin: 30px 0;
+      }
+    }
+
+
     // Form media
     .form {
         padding: 100px 0;
@@ -131,7 +172,40 @@
 }
 
 @media (max-width: 768px) {
-    // Form Media
+  // Latest Project
+
+  .latestProject {
+    .latestProject__intro {
+      margin-bottom: 50px;
+      .latestProject__title {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .latestProject__cards {
+    row-gap: 80px;
+  }
+
+  .latestProject__card-content {
+    max-width: 100%;
+
+    .latestProject__card-title {
+      font-size: 30px;
+    }
+
+    .latestProject__card-text {
+      font-size: 20px;
+      line-height: 30px;
+      
+    }
+
+    .latestProject__readMore-btn {
+      font-size: 18px;
+    }    
+  }
+
+    // Form media
     .form .wrapper {
         .form__content {
             .form__title {
@@ -163,7 +237,7 @@
         }
     }
 
-    // Footer Media
+    // Footer media
     .footer {
         padding: 70px 0;
     }
@@ -174,6 +248,38 @@
 }
 
 @media (max-width:576px) {
+    // Latest Project
+    .latestProject .latestProject__intro {
+      .latestProject__title {
+        font-size: 30px;
+      }
+      .latestProject__gallery-text {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .latestProject__cards {
+      row-gap: 60px;
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 25px;
+      }
+
+      .latestProject__card-text {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 16px;
+      }
+    }
+
+
     // Form media
     .form .wrapper {
         row-gap: 50px;
@@ -255,7 +361,42 @@
 }
 
 @media (max-width: 460px) {
-    // Footer media
+    // Latest Project
+    .latestProject {
+      padding: 60px 0;
+    }
+
+    .latestProject__cards {
+      row-gap: 40px;
+    }
+
+    .latestProject .latestProject__intro {
+      margin-bottom: 30px;
+      .latestProject__gallery-text p {
+        font-size: 16px;
+      }
+    }
+    
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 25px;
+      }
+
+      .latestProject__card-text {
+        font-size: 14px;
+        margin: 20px 0;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 14px;
+      }
+    }
+
+    .latestProject__card-img {
+      height: 300px;
+    }
+
+    // Form media
     .form {
         padding: 60px 0;
         
@@ -354,6 +495,33 @@
 }
 
 @media (max-width: 360px) {
+    // Latest Project
+    .latestProject {
+      .latestProject__intro {
+        .latestProject__title {
+          font-size: 25px;
+        }
+
+        .latestProject__gallery-text {
+          flex-direction: column;
+          row-gap: 5px;
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .latestProject__card {
+      row-gap: 30px;
+    }
+
+    .latestProject__card-img {
+      height: 200px;
+    }
+
+    // Footer media
     .footer__subscribe .footer__subscribe-title h3 {
         font-size: 22px;
     }
@@ -379,6 +547,37 @@
 }
 
 @media (max-width: 300px) {
+    // Latest Project 
+
+    .latestProject {
+      padding: 40px 0;
+    }
+
+    .latestProject .latestProject__intro {
+      .latestProject__title {
+        font-size: 22px;
+      }
+      .latestProject__gallery-text p {
+        font-size: 12px;
+      }
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 22px;
+      }
+
+      .latestProject__card-text {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 12px;
+      }
+    }
+
+    // Form media
     .form {
         padding: 40px 0;
         
