@@ -308,7 +308,7 @@ h1, h2, h3, h4 {
     font-size: 30px;
   }
 }
-@media (max-width: 300px) {
+@media (max-width: 320px) {
   .mini-card-heading h3 {
     font-size: 18px;
   }
