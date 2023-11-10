@@ -65,27 +65,27 @@ header {
   }
 }
 @media (max-width: 1400px) {
-  body .container .showcase .case {
+  body  .showcase .case {
     gap: 0;
   }
-  body .container {
+  body .showcase {
     padding: 48px 138px;
   }
 }
 @media (max-width: 1250px) {
   body {
-    .container .showcase h1 {
+     .showcase h1 {
       font-size: 40px;
       max-width: 956px;
     }
-    .container .showcase p {
+     .showcase p {
       font-size: 16px;
       max-width: 700px;
     }
   }
 }
 @media (max-width: 1180px) {
-  body .container .showcase .case {
+  body  .showcase .case {
     display: flex;
     gap: 30px;
     .box2 {
@@ -94,7 +94,7 @@ header {
   }
 }
 @media (max-width: 1170px) {
-  body .container .showcase .case {
+  body  .showcase .case {
     display: flex;
     gap: 30px;
     .box2 {
@@ -110,7 +110,7 @@ header {
   }
 }
 @media (max-width: 1100px) {
-  body .container .showcase .case .box2 {
+  body  .showcase .case .box2 {
     margin: 0;
   }
   body header {
@@ -209,16 +209,16 @@ header {
   }
 }
 @media (max-width: 900px) {
-  body .container .showcase h1 {
+  body  .showcase h1 {
     font-size: 30px;
   }
-  body .container .showcase p {
+  body  .showcase p {
     font-size: 14px;
   }
-  body .container .showcase .case .box .right p {
+  body  .showcase .case .box .right p {
     font-size: 12px;
   }
-  body .container .showcase .case {
+  body  .showcase .case {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -226,7 +226,7 @@ header {
       margin: 0 auto;
     }
   }
-  body .container {
+  body .showcase {
     padding: 20px 100px;
   }
 }
@@ -235,7 +235,7 @@ header {
     header {
       padding: 54px 80px;
     }
-    .container {
+    .showcase {
       padding: 20px 60px;
     }
   }
@@ -248,19 +248,19 @@ header {
     header {
       padding: 54px 50px;
     }
-    .container {
+    .showcase {
       padding: 20px 50px;
     }
   }
 }
 @media (max-width: 470px) {
-  body .container .showcase h1 {
+  body  .showcase h1 {
     font-size: 24px;
   }
-  body .container .showcase p {
+  body  .showcase p {
     font-size: 12px;
   }
-  body .container .showcase .case {
+  body  .showcase .case {
     gap: 100px;
   }
   body header nav ul{
@@ -270,5 +270,9 @@ header {
 @media (max-width: 370px) {
   body header nav ul{
     right: 3%;
+  }
+  body .showcase .case .box{
+    display: flex;
+    flex-direction: column;
   }
 }
