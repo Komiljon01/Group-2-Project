@@ -297,7 +297,7 @@ h1, h2, h3, h4 {
     font-size: 40px;
   }
   .heading span {
-    font-size: 10px;
+    font-size: 12px !important;
   }
   .wrapper .carousel {
     grid-auto-columns: 100%;
@@ -306,6 +306,29 @@ h1, h2, h3, h4 {
 @media (max-width: 350px) {
   .heading h2 {
     font-size: 30px;
+  }
+}
+@media (max-width: 300px) {
+  .mini-card-heading h3 {
+    font-size: 18px;
+  }
+  .heading h2 {
+    font-size: 22px;
+  }
+  .client-img {
+    height: 200px;
+  }
+  .client-info h2 {
+    font-size: 18px;
+  }
+  .client-info p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .more {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
   }
 }
 
