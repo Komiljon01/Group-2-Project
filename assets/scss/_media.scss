@@ -1,0 +1,619 @@
+@media (max-width: 1180px) {
+    // Form media
+    .form {
+        padding-bottom: 141px;
+    }
+
+    .form .wrapper {
+        flex-direction: column;
+
+        .form__card {
+            position: unset;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form__content {
+            max-width: 80%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+
+            .form__title {
+                max-width: 100%;
+            }
+        }
+    }
+
+    // Footer media
+    .footer {
+        padding-top: 150px;
+    }
+
+    .footer__sections {
+        width: 50%;
+        max-width: 100%;
+        column-gap: 15px;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 992px) {
+    // Latest Project
+    .latestProject__cards {
+      row-gap: 100px;
+      .latestProject__card:nth-child(even) {
+        flex-direction: column;
+      }
+    }
+
+    .latestProject__card {
+      flex-direction: column-reverse;
+      text-align: center;
+      row-gap: 50px;
+    }
+
+    .latestProject__card-content {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .latestProject__card-img {
+      margin: 0 auto;
+    }
+
+
+    // Footer media
+    .footer .wrapper .footer__content {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .footer__subscribe {
+       width: 100%; 
+       text-align: center;
+
+       .footer__subscribe-title {
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 15px;
+       }
+    }
+
+    .footer__sections {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .footer__end {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    // Latest Project
+    .latestProject .latestProject__intro .latestProject__title {
+      font-size: 50px;
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 40px;
+      }
+
+      .latestProject__card-text {
+        font-size: 22px;
+        margin: 30px 0;
+      }
+    }
+
+
+    // Form media
+    .form {
+        padding: 100px 0;
+    }
+    .form .wrapper {
+        row-gap: 100px;
+
+        .form__content {
+            margin-top: 0;
+            max-width: 95%;
+            margin-bottom: 0;
+
+            .form__title {
+                font-size: 50px;
+            }
+
+            .form__text {
+                font-size: 22px;
+                margin: 60px 0;
+            }
+        }
+
+        .form__card {
+            max-width: 700px;
+        }
+    }
+
+    // Footer media
+
+    .footer__subscribe {
+        .footer__subscribe-text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+        .footer__subscribe-form {
+            input, button {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .footer__sections  ul li {
+        &:first-child {
+            font-size: 22px;
+        }
+
+        a {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .footer__end {
+        row-gap: 10px;
+        .created__by,  .footer__privacy a {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  // Latest Project
+
+  .latestProject {
+    .latestProject__intro {
+      margin-bottom: 50px;
+      .latestProject__title {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .latestProject__cards {
+    row-gap: 80px;
+  }
+
+  .latestProject__card-content {
+    max-width: 100%;
+
+    .latestProject__card-title {
+      font-size: 30px;
+    }
+
+    .latestProject__card-text {
+      font-size: 20px;
+      line-height: 30px;
+      
+    }
+
+    .latestProject__readMore-btn {
+      font-size: 18px;
+    }    
+  }
+
+    // Form media
+    .form .wrapper {
+        .form__content {
+            .form__title {
+                font-size: 40px;
+            }
+
+            .form__text {
+                font-size: 20px;
+                line-height: 30px;
+                margin: 50px 0;
+            }
+        }
+
+        .form__card {
+            max-width: 90%;
+
+            label {
+                p {
+                    font-size: 22px;
+                }
+                input {
+                    font-size: 18px;
+                }
+            }
+
+            .submit__btn .btn {
+                font-size: 18px;
+            }
+        }
+    }
+
+    // Footer media
+    .footer {
+        padding: 70px 0;
+    }
+
+    .footer__sections {
+        width: 90%;
+    }
+}
+
+@media (max-width:576px) {
+    // Latest Project
+    .latestProject .latestProject__intro {
+      .latestProject__title {
+        font-size: 30px;
+      }
+      .latestProject__gallery-text {
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .latestProject__cards {
+      row-gap: 60px;
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 25px;
+      }
+
+      .latestProject__card-text {
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 16px;
+      }
+    }
+
+
+    // Form media
+    .form .wrapper {
+        row-gap: 50px;
+
+        .form__content {
+            .form__title {
+                font-size: 30px;
+            }
+
+            .form__text {
+                font-size: 18px;
+                margin: 40px 0;
+            }
+
+            .form__line {
+                width: 250px;
+            }
+        }
+
+        .form__card {
+            padding: 45px 25px 30px;
+
+            label {
+                p {
+                    font-size: 20px;
+                }
+
+                input {
+                    font-size: 16px;
+                    padding: 25px 28px;
+                }
+            }
+
+            .submit__btn .btn {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // Footer media
+    .footer .wrapper .footer__content {
+        margin-bottom: 75px;
+    }
+    .footer__subscribe {
+        .footer__subscribe-title {
+            row-gap: 5px;
+        } 
+
+        .footer__subscribe-form {
+            input, button {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    .footer__sections {
+        ul {
+            row-gap: 12px;
+            li {
+                &:first-child {
+                    font-size: 20px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    .footer__end {
+        .created__by, .footer__privacy a {
+            font-size: 16px;
+            line-height: 25px;
+        }
+    }
+
+}
+
+@media (max-width: 460px) {
+    // Latest Project
+    .latestProject {
+      padding: 60px 0;
+    }
+
+    .latestProject__cards {
+      row-gap: 40px;
+    }
+
+    .latestProject .latestProject__intro {
+      margin-bottom: 30px;
+      .latestProject__gallery-text p {
+        font-size: 16px;
+      }
+    }
+    
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 25px;
+      }
+
+      .latestProject__card-text {
+        font-size: 14px;
+        margin: 20px 0;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 14px;
+      }
+    }
+
+    .latestProject__card-img {
+      height: 300px;
+    }
+
+    // Form media
+    .form {
+        padding: 60px 0;
+        
+        .wrapper {
+            .form__content {
+                .form__title {
+                    font-size: 25px;
+
+                }
+
+                .form__text {
+                    margin: 30px 0;
+                    font-size: 14px;
+                }
+
+                .form__line {
+                    width: 40%;
+                    height: 3px;
+                }
+            }
+
+            .form__card {
+                max-width: 100%;
+                padding: 25px 20px;
+                row-gap: 20px;
+
+                label {
+                    p {
+                        font-size: 16px;
+                    }
+
+                    input {
+                        padding: 15px 20px;
+                        font-size: 14px;
+                    }
+                }
+
+                .submit__btn .btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Footer media
+    .footer {
+        padding: 50px 0;
+        .wrapper .footer__content {
+            row-gap: 25px;
+            margin-bottom: 40px;
+        }
+    }
+
+    .footer__subscribe {
+        .footer__subscribe-text {
+            font-size: 14px;
+        }
+
+        .footer__subscribe-form {
+            padding: 15px 10px;
+            input, button {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer__sections {
+        flex-direction: column;
+        row-gap: 25px;
+
+        ul {
+            row-gap: 8px;
+            li {
+                &:first-child {
+                    line-height: 30px;
+                    font-size: 18px;
+                }
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .footer__end {
+        .created__by, .footer__privacy a {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .footer__privacy {
+            flex-direction: column;
+            row-gap: 10px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    // Latest Project
+    .latestProject {
+      .latestProject__intro {
+        .latestProject__title {
+          font-size: 25px;
+        }
+
+        .latestProject__gallery-text {
+          flex-direction: column;
+          row-gap: 5px;
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .latestProject__card {
+      row-gap: 30px;
+    }
+
+    .latestProject__card-img {
+      height: 200px;
+    }
+
+    // Footer media
+    .footer__subscribe .footer__subscribe-title h3 {
+        font-size: 22px;
+    }
+
+    .footer__subscribe .footer__subscribe-form {
+        flex-direction: column;
+        row-gap: 15px;
+
+        input {
+            border: 1px solid #CCC;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        button {
+            width: 100%;
+        }
+    }
+
+    .footer__sections {
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px) {
+    // Latest Project 
+
+    .latestProject {
+      padding: 40px 0;
+    }
+
+    .latestProject .latestProject__intro {
+      .latestProject__title {
+        font-size: 22px;
+      }
+      .latestProject__gallery-text p {
+        font-size: 12px;
+      }
+    }
+
+    .latestProject__card-content {
+      .latestProject__card-title {
+        font-size: 22px;
+      }
+
+      .latestProject__card-text {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      .latestProject__readMore-btn {
+        font-size: 12px;
+      }
+    }
+
+    // Form media
+    .form {
+        padding: 40px 0;
+        
+        .wrapper {
+            .form__content {
+                .form__title {
+                    font-size: 22px;
+
+                }
+
+                .form__text {
+                    margin: 20px 0;
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+            }
+
+            .form__card {
+                max-width: 100%;
+                row-gap: 15px;
+
+                label {
+                    p {
+                        font-size: 14px;
+                    }
+
+                    input {
+                        padding: 10px 15px;
+                        font-size: 12px;
+                    }
+                }
+
+                .submit__btn .btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
