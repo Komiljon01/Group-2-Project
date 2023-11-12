@@ -1,0 +1,19 @@
+.btn0 {
+    display: inline-flex;
+    padding: 11px 29px 10px 28px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #ff6a28;
+    color: #FF6A28;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: none;
+    &:hover{
+        background-color: #ff6a28;
+        color: #FFF;
+    }
+}
