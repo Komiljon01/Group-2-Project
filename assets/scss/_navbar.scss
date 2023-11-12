@@ -1,66 +1,68 @@
 header {
-  //   max-width: 1440px;
-  background: #fff;
-  padding: 54px 138px 50px 135px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  .logo {
+  .container {
+    //   max-width: 1440px;
+    background: #fff;
+    padding: 54px 15px 50px 15px; //135xp
     display: flex;
     align-items: center;
-    a {
-      color: #121212;
-      font-family: "Playfair Display";
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
-    }
-  }
-  .lab {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    .menu {
+    justify-content: space-between;
+    gap: 10px;
+    .logo {
       display: flex;
       align-items: center;
-      gap: 30px;
-      li {
-        a {
-          color: rgba(18, 18, 18, 0.6);
-          font-family: Poppins;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-          border-bottom: 2px solid white;
-          &:hover {
-            color: #121212;
-            border-bottom: 2px solid #ff6a28;
+      a {
+        color: #121212;
+        font-family: "Playfair Display";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+    .lab {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .menu {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        li {
+          a {
+            color: rgba(18, 18, 18, 0.6);
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border-bottom: 2px solid white;
+            &:hover {
+              color: #121212;
+              border-bottom: 2px solid #ff6a28;
+            }
           }
         }
       }
     }
-  }
-  nav {
-    display: none;
-    i {
-      color: black;
+    nav {
+      display: none;
+      i {
+        color: black;
+      }
     }
-  }
-  .switcher {
-    position: absolute;
-    visibility: hidden;
-    left: -9999px;
-  }
-  label {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-  }
-  ul {
-    list-style-type: none;
-    display: flex;
+    .switcher {
+      position: absolute;
+      visibility: hidden;
+      left: -9999px;
+    }
+    label {
+      font-size: 30px;
+      cursor: pointer;
+      display: none;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+    }
   }
 }
