@@ -1,0 +1,112 @@
+.we-work-part {
+  padding-bottom: 99px;
+}
+.work-cards {
+  margin-top: 39px;
+}
+
+.work-card {
+  &__img {
+    border-radius: 8px;
+    height: 210.67px;
+    background-color: #c4c4c4;
+  }
+
+  &__text {
+    .mini-card-heading {
+      margin: 28px 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    h3 {
+      color: #121212;
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    span {
+      color: rgba(255, 106, 40, 0.7);
+      text-align: right;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 175%; /* 35px */
+    }
+    p {
+      color: rgba(18, 18, 18, 0.83);
+      text-align: justify;
+      font-family: Poppins;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 162.5%; /* 32.5px */
+    }
+  }
+}
+
+.we-work-part {
+  margin-top: 111px;
+}
+
+.work-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 73px;
+}
+
+.wrapper {
+  margin-top: 39px;
+}
+
+.wrapper .carousel {
+  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  gap: 44px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel .card {
+  width: 316px;
+  scroll-snap-align: start;
+  // height: 342px;
+  // list-style: none;
+  // background: #fff;
+  cursor: pointer;
+  // padding-bottom: 15px;
+  // flex-direction: column;
+  // border-radius: 8px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+// .carousel :where(.card, .img) {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+.work-card {
+  width: 100%;
+}
+
